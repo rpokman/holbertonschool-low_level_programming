@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-printf("%d");
+printf("%lu", sizeoff(int));
 return (0);
 }
