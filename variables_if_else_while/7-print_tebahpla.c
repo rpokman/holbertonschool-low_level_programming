@@ -9,12 +9,12 @@
  */
 int main(void)
 {
-	char alphabet = 'z';
+	char alphabet = 'a';
 
-	while (alphabet <= 'a')
+	while (alphabet <= 'z')
 	{
 		putchar(alphabet);
-		alphabet++;
+		alphabet--;
 	}
 
 	putchar('\n');
