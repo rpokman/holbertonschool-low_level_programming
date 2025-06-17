@@ -3,21 +3,20 @@
 #include <stdio.h>
 
 /**
- * main - Affiche le dernier chiffre d'un nombre aléatoire et son état
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	char alphabet = 'a';
 
-    char alphabet = 'a';
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
 
-    while (alphabet <= 'z')
-    {
-        putchar(alphabet);
-
-        alphabet++;
-    }
-
-    putchar('\n');
-    return (0);
+	putchar('\n');
+	return (0);
 }
