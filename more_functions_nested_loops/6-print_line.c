@@ -2,6 +2,8 @@
 
 /**
  * print_line - print a line
+ *
+ * @n: n is the n idk
  */
 void print_line(int n)
 {
