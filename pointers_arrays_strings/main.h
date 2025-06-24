@@ -23,4 +23,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void reset_to_98(int *n);
+void swap_int(int *a, int *b);
 #endif
