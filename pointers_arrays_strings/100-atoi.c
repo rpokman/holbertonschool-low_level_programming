@@ -20,12 +20,12 @@ int _atoi(char *s)
 			sign *= -1;
 		else if (s[a] >= '0' && s[a] <= '9')
 		{
-			result = result * 10 + (s[a] - '0');
+			result = result * 10 - (s[a] - '0');
 			started = 1;
 		}
 		else if (started)
 			break;
 
 	}
-	return (result * sign);
+	return (sign == 1 ? -result : result);
 }
