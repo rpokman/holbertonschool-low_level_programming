@@ -1,9 +1,13 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers
+ * _strcat - function
  *
- * Return: Always 0 (Success)
+ * @dest: hello
+ *
+ * @src: world
+ *
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
