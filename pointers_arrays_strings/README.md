@@ -1,41 +1,73 @@
-# C - Pointers, Arrays and Strings
+# C - Pointeurs, Tableaux et Chaînes de caractères
 
-This repository contains my work and exercises on pointers, arrays, and strings in C, based on the curriculum from the Holberton School. The project is designed to help understand low-level memory manipulation and how C handles data structures and function calls.
+Ce dépôt contient mon travail et mes exercices sur les pointeurs, les tableaux et les chaînes de caractères en langage C, dans le cadre du programme de la Holberton School. Ce projet est conçu pour mieux comprendre la manipulation bas niveau de la mémoire et comment le langage C gère les structures de données et les appels de fonctions.
 
-## Learning Objectives
+## 🎯 Objectifs pédagogiques
 
-The goal of this project is to understand and apply the following key concepts:
+Ce projet permet de comprendre et d'appliquer les concepts suivants :
 
-- What are pointers and how they work
-- How to use pointers to access and modify data
-- How to declare and manipulate arrays
-- How strings are represented in C
-- Pointer arithmetic
-- How arrays and pointers are different (and how they behave similarly)
-- How to use `sizeof`, `&`, and `*` operators
-- How to pass variables by reference to functions using pointers
+- Ce que sont les pointeurs et comment ils fonctionnent
+- Comment utiliser les pointeurs pour accéder et modifier des données
+- Comment déclarer et manipuler des tableaux
+- Comment les chaînes de caractères sont représentées en C
+- L'arithmétique des pointeurs
+- La différence (et les similitudes) entre tableaux et pointeurs
+- L’utilisation des opérateurs `sizeof`, `&` et `*`
+- Comment passer des variables par référence à une fonction
 
-## Files and Descriptions
+---
 
-| File Name            | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `0-reset_to_98.c`     | Function that updates the value a pointer points to to 98.                 |
-| `1-swap.c`            | Function that swaps the values of two integers.                            |
-| `2-strlen.c`          | Function that returns the length of a string.                              |
-| `3-puts.c`            | Function that prints a string followed by a new line.                      |
-| `4-print_rev.c`       | Function that prints a string in reverse.                                  |
-| `5-rev_string.c`      | Function that reverses a string.                                           |
-| `6-puts2.c`           | Function that prints every other character of a string.                    |
-| `7-puts_half.c`       | Function that prints the second half of a string.                          |
-| `8-print_array.c`     | Function that prints `n` elements of an integer array.                     |
-| `9-strcpy.c`          | Function that copies a string.                                             |
-| `100-atoi.c`          | Function that converts a string to an integer (`atoi` implementation).     |
-| `101-keygen.c`        | Program that generates random valid passwords for the program `101-crackme`.|
+## 📄 Fichiers et descriptions
 
-## Compilation
+| Fichier                | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `0-reset_to_98.c`      | Met la valeur pointée à 98                                                  |
+| `1-swap.c`             | Échange les valeurs de deux entiers                                         |
+| `2-strlen.c`           | Retourne la longueur d'une chaîne                                           |
+| `3-puts.c`             | Affiche une chaîne suivie d’un retour à la ligne                           |
+| `4-print_rev.c`        | Affiche une chaîne à l'envers                                               |
+| `5-rev_string.c`       | Inverse une chaîne de caractères                                            |
+| `6-puts2.c`            | Affiche un caractère sur deux d'une chaîne                                 |
+| `7-puts_half.c`        | Affiche la seconde moitié d'une chaîne                                      |
+| `8-print_array.c`      | Affiche les `n` premiers éléments d’un tableau d'entiers                    |
+| `9-strcpy.c`           | Copie une chaîne dans une autre                                             |
+| `100-atoi.c`           | Imite la fonction `atoi` : convertit une chaîne en entier                   |
 
-All C files are compiled using the following command:
+---
+
+## 🧠 Fonctions de manipulation de chaînes et tableaux
+
+| Fichier               | Description                                                                  |
+|-----------------------|------------------------------------------------------------------------------|
+| `0-memset.c`          | Remplit une mémoire avec une valeur constante                                |
+| `1-memcpy.c`          | Copie `n` octets d’une zone mémoire vers une autre                           |
+| `2-strchr.c`          | Localise le premier caractère donné dans une chaîne                          |
+| `3-strspn.c`          | Compte les octets initiaux composés seulement des caractères acceptés        |
+| `4-strpbrk.c`         | Cherche le premier caractère d’un ensemble dans une chaîne                   |
+| `5-strstr.c`          | Trouve la première occurrence d’une sous-chaîne dans une chaîne              |
+| `7-print_chessboard.c`| Affiche un échiquier 8x8 en mode texte                                       |
+| `8-print_diagsums.c`  | Affiche les sommes des diagonales principales d’une matrice carrée           |
+
+---
+
+## 🧩 Fonctions de manipulation de chaînes (niveau 2)
+
+| Fichier               | Description                                                                  |
+|-----------------------|------------------------------------------------------------------------------|
+| `0-strcat.c`          | Concatène deux chaînes                                                       |
+| `1-strncat.c`         | Concatène deux chaînes (limité à `n` caractères)                             |
+| `2-strncpy.c`         | Copie une chaîne (limité à `n` caractères)                                   |
+| `3-strcmp.c`          | Compare deux chaînes                                                         |
+| `4-rev_array.c`       | Inverse le contenu d’un tableau d’entiers                                   |
+| `5-string_toupper.c`  | Convertit une chaîne en majuscules                                           |
+| `6-cap_string.c`      | Met en majuscule la première lettre de chaque mot                           |
+| `7-leet.c`            | Encode une chaîne en style “leet” (1337)                                     |
+
+---
+
+## ⚙️ Compilation
+
+Tous les fichiers `.c` sont compilés avec la commande suivante :
 
 ```bash
-gcc -Wall -Werror -Wextra -pedantic *.c -o my_program
-
+gcc -Wall -Werror -Wextra -pedantic *.c -o nom_programme
