@@ -21,4 +21,20 @@ Ce projet permet de comprendre et d'appliquer les concepts suivants :
 📄 **Fichiers et descriptions**
 
 | Fichier                   | Description                                                   |
-|-----------------
+|---------------------------|---------------------------------------------------------------|
+| `0-puts_recursion.c`      | Affiche une chaîne de caractères suivie d’un saut de ligne    |
+| `1-print_rev_recursion.c` | Affiche une chaîne de caractères à l’envers                   |
+| `2-strlen_recursion.c`    | Retourne la longueur d’une chaîne de caractères               |
+| `3-factorial.c`           | Calcule la factorielle d’un nombre entier                     |
+| `4-pow_recursion.c`       | Calcule la puissance d’un nombre                              |
+| `5-sqrt_recursion.c`      | Calcule la racine carrée naturelle d’un nombre                |
+| `6-is_prime_number.c`     | Détermine si un nombre est un nombre premier                  |
+
+---
+
+⚙️ **Compilation**
+
+Tous les fichiers `.c` sont compilés avec la commande suivante :
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o nom_programme
