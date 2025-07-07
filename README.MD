@@ -1,6 +1,6 @@
 # Holberton - Low Level Programming 📚 
 
-Ce dépôt contient mes projets réalisés dans le cadre du cursus "Low-Level Programming" de Holberton School. Il s'agit d'une introduction au langage C, couvrant les concepts fondamentaux tels que les variables, les boucles, les fonctions, les pointeurs, les tableaux, les chaînes de caractères, la récursivité et la gestion des arguments passés à un programme.
+Ce dépôt contient mes projets réalisés dans le cadre du cursus "Low-Level Programming" de Holberton School. Il s'agit d'une introduction au langage C, couvrant les concepts fondamentaux tels que les variables, les boucles, les fonctions, les pointeurs, les tableaux, les chaînes de caractères, la récursivité, la gestion des arguments et l’allocation dynamique de mémoire.
 
 ---
 
@@ -15,6 +15,7 @@ Ce dépôt contient mes projets réalisés dans le cadre du cursus "Low-Level Pr
 | `pointers_arrays_strings` | Introduction aux pointeurs, tableaux, manipulation de chaînes |
 | `recursion` | Résolution de problèmes à l’aide de la récursivité, sans boucles |
 | `argc_argv` | Utilisation des arguments `argc` et `argv`, traitement de la ligne de commande |
+| `malloc_free` | Allocation dynamique de mémoire avec `malloc` et libération avec `free` |
 
 ---
 
@@ -28,6 +29,8 @@ Ce dépôt contient mes projets réalisés dans le cadre du cursus "Low-Level Pr
 - Utilisation de tableaux et chaînes de caractères
 - Mise en œuvre de la récursivité pour résoudre des problèmes sans boucles
 - Lecture et traitement des arguments passés à un programme via `argc` et `argv`
+- Utilisation de `malloc` et `free` pour gérer dynamiquement la mémoire
+- Détection de fuites mémoire avec `valgrind`
 
 ---
 
