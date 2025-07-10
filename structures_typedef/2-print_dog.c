@@ -6,7 +6,7 @@
  * @d: Pointer to struct dog
  *
  * Description:
- * If any element of the struct is NULL, it prints (nil) instead.
+ * If an element is NULL, it prints (nil) instead.
  * If d is NULL, the function does nothing.
  */
 void print_dog(struct dog *d)
@@ -22,7 +22,4 @@ void print_dog(struct dog *d)
 	printf("age: %f\n", d->age);
 
 	if (d->owner == NULL)
-		printf("owner: (nil)\n");
-	else
-		printf("owner: %s\n", d->owner);
-}
+		printf(
