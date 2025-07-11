@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "dog.h"
-#include "main.h"
 
 /**
 * init_dog - initialise une variable de type struct dog
