@@ -9,6 +9,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 	char *dup_str;
+
 	unsigned int len = 0;
 
 	dup_str = strdup(str);
