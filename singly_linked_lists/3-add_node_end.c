@@ -9,8 +9,8 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *temp;
+	list_t *new, *temp;
+	unsigned int len;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -23,7 +23,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new->len = strlen(str);
+	/* Count length of str manually using a for loop */
+	for (len = 0; str[len] != '\0'; len++)
+		;
+
+	new->len = len;
 	new->next = NULL;
 
 	if (*head == NULL)
