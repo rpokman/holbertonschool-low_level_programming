@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_list - Affiche tous les éléments d'une liste list_t
- * @h: pointeur vers le premier nœud de la liste (la tête)
+ * print_list - Prints all the elements of a list_t list
+ * @h: pointer to the head of the list
  *
- * Return: le nombre de nœuds affichés
+ * Return: the number of nodes printed
  */
 size_t print_list(const list_t *h)
 {
