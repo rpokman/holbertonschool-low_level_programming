@@ -13,7 +13,7 @@
  * @len: length of the string
  * @next: points to the next node
  *
- * Description: Structure representing a node in a singly linked list
+ * Description: Structure representing a node in a doubly linked list
  */
 typedef struct list_s
 {
