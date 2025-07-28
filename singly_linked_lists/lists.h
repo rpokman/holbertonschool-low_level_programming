@@ -9,8 +9,8 @@
 #include <unistd.h>
 
 /**
- * struct list_s - singly linked list node structure
- * @str: string - (malloc'ed string)
+ * struct list_s
+ * @str: string
  * @len: length of the string
  * @next: points to the next node
  */
