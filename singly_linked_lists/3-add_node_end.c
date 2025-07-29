@@ -23,7 +23,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	/* Count length of str manually using a for loop */
 	for (len = 0; str[len] != '\0'; len++)
 		;
 
