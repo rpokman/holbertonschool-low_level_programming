@@ -8,21 +8,20 @@
 #include <unistd.h>
 
 /**
- * struct list_s - singly linked list node structure
- * @str: string - (malloc'ed string)
- * @len: length of the string
+ * struct dlistint_s - doubly linked list
+ * @n: integer
+ * @prev: points to the previous node
  * @next: points to the next node
  *
- * Description: Structure representing a node in a doubly linked list
+ * Description: doubly linked list node structure
+ * 
  */
-typedef struct list_s
+typedef struct dlistint_s
 {
-	char *str;
-
-	unsigned int len;
-
-	struct list_s *next;
-} list_t;
+    int n;
+    struct dlistint_s *prev;
+    struct dlistint_s *next;
+} dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
