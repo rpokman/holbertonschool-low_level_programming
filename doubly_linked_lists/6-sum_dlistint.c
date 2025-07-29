@@ -8,11 +8,11 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
-	int sum = 0;
+	int a = 0;
 
 	for (; head != NULL; head = head->next)
 	{
-	sum += head->n;
+	a += head->n;
 	}
-	return (sum);
+	return (a);
 }
