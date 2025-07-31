@@ -4,19 +4,17 @@
 #include <stdlib.h>
 
 /**
-* read_textfile - Reads a text file and prints its content to the terminal.
-* @filename: The name of the file to read.
-* @letters: The maximum number of letters to read and print.
-*
-* Return: The actual number of letters read and printed,
-*/
-
+ * read_textfile - Reads a text file and prints its content to the terminal.
+ * @filename: The name of the file to read.
+ * @letters: The maximum number of letters to read and print.
+ *
+ * Return: The actual number of letters read and printed.
+ *         0 if an error occurs (e.g., file cannot be opened or read).
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-
 	char *buffer;
-
 	ssize_t read_bytes, written_bytes;
 
 	if (filename == NULL)
