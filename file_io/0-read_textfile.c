@@ -9,8 +9,10 @@
 * @letters: The maximum number of letters to read and print.
 *
 * Return: The actual number of letters read and printed,
-*         or 0 on failure (if filename is NULL, or if reading or writing fails).
+*         or 0 on failure (if filename is NULL,
+*         or if reading or writing fails).
 */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
