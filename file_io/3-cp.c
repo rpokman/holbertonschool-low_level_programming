@@ -1,4 +1,8 @@
 #include "main.h"
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 void print_error(int code, const char *message, const char *arg);
 void copy_file(const char *file_from, const char *file_to);
@@ -14,7 +18,7 @@ int main(int ac, char **av)
 {
 	if (ac != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -63,10 +67,16 @@ void copy_file(const char *file_from, const char *file_to)
 	}
 
 	if (close(fd_from) == -1)
-		print_error(100, "Error: Can't close fd", file_from);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+		exit(100);
+	}
 
 	if (close(fd_to) == -1)
-		print_error(100, "Error: Can't close fd", file_to);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+		exit(100);
+	}
 }
 
 /**
