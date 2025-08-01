@@ -50,7 +50,6 @@ void copy_file(const char *file_from, const char *file_to)
 		if (written_bytes != read_bytes)
 		{
 			close(fd_from);
-			close(fd_to);
 			print_error(99, "Error: Can't write to", file_to);
 		}
 	}
@@ -58,7 +57,6 @@ void copy_file(const char *file_from, const char *file_to)
 	if (read_bytes == -1)
 	{
 		close(fd_from);
-		close(fd_to);
 		print_error(98, "Error: Can't read from file", file_from);
 	}
 
