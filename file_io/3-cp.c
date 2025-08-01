@@ -1,8 +1,4 @@
 #include "main.h"
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
 
 void print_error(int code, const char *message, const char *arg);
 void copy_file(const char *file_from, const char *file_to);
