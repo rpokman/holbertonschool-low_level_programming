@@ -46,8 +46,7 @@ void copy_file(const char *file_from, const char *file_to)
 	{
 		if (close(fd_from) == -1)
 		{
-			write(STDERR_FILENO, "Error: Can't close fd ", 23);
-			dprintf(STDERR_FILENO, "%d\n", fd_from);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 			exit(100);
 		}
 		print_error(99, "Error: Can't write to", file_to);
@@ -60,14 +59,12 @@ void copy_file(const char *file_from, const char *file_to)
 		{
 			if (close(fd_from) == -1)
 			{
-				write(STDERR_FILENO, "Error: Can't close fd ", 23);
-				dprintf(STDERR_FILENO, "%d\n", fd_from);
+				dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 				exit(100);
 			}
 			if (close(fd_to) == -1)
 			{
-				write(STDERR_FILENO, "Error: Can't close fd ", 23);
-				dprintf(STDERR_FILENO, "%d\n", fd_to);
+				dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 				exit(100);
 			}
 			print_error(99, "Error: Can't write to", file_to);
@@ -78,14 +75,12 @@ void copy_file(const char *file_from, const char *file_to)
 	{
 		if (close(fd_from) == -1)
 		{
-			write(STDERR_FILENO, "Error: Can't close fd ", 23);
-			dprintf(STDERR_FILENO, "%d\n", fd_from);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 			exit(100);
 		}
 		if (close(fd_to) == -1)
 		{
-			write(STDERR_FILENO, "Error: Can't close fd ", 23);
-			dprintf(STDERR_FILENO, "%d\n", fd_to);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 			exit(100);
 		}
 		print_error(98, "Error: Can't read from file", file_from);
@@ -93,15 +88,13 @@ void copy_file(const char *file_from, const char *file_to)
 
 	if (close(fd_from) == -1)
 	{
-		write(STDERR_FILENO, "Error: Can't close fd ", 23);
-		dprintf(STDERR_FILENO, "%d\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 
 	if (close(fd_to) == -1)
 	{
-		write(STDERR_FILENO, "Error: Can't close fd ", 23);
-		dprintf(STDERR_FILENO, "%d\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
 }
